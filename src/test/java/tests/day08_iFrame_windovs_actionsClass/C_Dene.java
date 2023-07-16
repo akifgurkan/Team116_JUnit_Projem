@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import utilities.ReusableMethods;
 import utilities.TestBase;
 
 public class C_Dene extends TestBase {
@@ -31,7 +32,7 @@ public class C_Dene extends TestBase {
         WebElement link = driver.findElement(By.xpath("/html/body/a/img"));
         link.click();
 
-
+        driver.quit();
     }
 
 }

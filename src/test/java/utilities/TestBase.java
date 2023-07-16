@@ -19,9 +19,7 @@ public class TestBase {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
     }
-
 
     @After
     public void teardown(){
@@ -31,7 +29,7 @@ public class TestBase {
     public void bekle(int saniye){
 
         try {
-            Thread.sleep(saniye*1000);
+            Thread.sleep(saniye * 1000);
         } catch (InterruptedException e) {
             System.out.println("Bekleme isleminde hata olustu");
             throw new RuntimeException();
